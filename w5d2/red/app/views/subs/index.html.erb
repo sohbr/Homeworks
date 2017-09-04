@@ -1,0 +1,9 @@
+<h1>Subs Index</h1>
+
+<%= link_to 'Create New Sub', new_sub_url %>
+<br><br>
+
+<% @subs.each do |sub| %>
+  <%= link_to sub.title, sub_url(sub) %>
+  <br>
+<% end %>

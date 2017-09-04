@@ -1,0 +1,23 @@
+<h1 class="page-header">Existing User Log In</h1>
+
+  <a class="button" href="<%= new_user_url %>">New User Sign Up</a>
+
+    <form class="form" action=" <%= session_url %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+      <br>
+
+      <label for="existing_user_email">Email</label>
+      <input id="existing_user_email" type="text" name="user[email]">
+
+      <br>
+
+      <label for="existing_user_password">Password</label>
+      <input id="existing_user_password" type="password" name="user[password]">
+
+      <br>
+
+      <input type="submit" value="Submit">
+
+
+    </form>
