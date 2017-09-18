@@ -1,0 +1,50 @@
+body {
+  background-image: url("splash.jpg")
+}
+
+.main-nav {
+	display:flex;
+	justify-content: space-between;
+	padding: 5px 5px;
+	border-bottom: 1px solid $light-gray;
+  background-color: beige;
+  opacity: .9;
+}
+
+.left-nav ul,
+.right-nav ul {
+	display: inline-block;
+	align-items: center;
+}
+
+.left-nav ul {
+	margin-left: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: $sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 7px 9px;
+	transition: background-color 0.3s;
+}
+
+.right-nav > ul > li {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  opacity: .8;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.footer > a {
+
+  margin: 20px;
+}
